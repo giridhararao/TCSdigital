@@ -12,4 +12,4 @@ if(not(x>=0 and x<=23 and y>=0 and y<=23)):
     print("Invalid Input")
 else:
     a=float(a)
-    print("{} {} {} {} {} {}".format((str)(round((a+0.00),2)),(str)(round((a+0.04),2)),(str)(round((a+0.09),2)),(a+0.15),(a+0.19),(a+0.22)))
+    print("{:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}".format((a+0.00),(a+0.04),(a+0.09),(a+0.15),(a+0.19),(a+0.22)))
