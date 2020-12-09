@@ -1,0 +1,39 @@
+Frank is conducting an online graphics course, where he will be giving a value of n, and expecting each of his k students to submit a different triangulation with no intersections. To help him, he asks his TCS friend to create a JAR (Java library) for him to compute the number of ways of triangulating a polygon, given n. This JAR implements the function PolygonTriangulateApi.noTriang, which accepts an integer parameter n, and returns an integer giving the number of ways of triangulating the n sided polygon.
+
+Frank would like you to code a program in JAVA to get the value of k, and output the smallest value of n that would enable each of his students to submit a different triangulation. With k=12, the value of n is obviously 6.
+
+Name of your class	PolygonTriangulate
+Input variable(s) in the Template	noOfStudents
+Output variable(s) in the Template	noOfSidesOfPolygon
+API Details	 
+        API Package	:com.tcs.talent.api
+        API Class:	PolygonTriangulateApi
+        API Method: noTriang
+        Is static method?:	Yes
+        Input Argument(s): int noSide − No. of sides of the polygon
+        Returns:	int − No. of triangulations possible for the given polygon
+        
+        
+Code:
+
+import com.tcs.talent.PolygonTrangulateApi;
+import java.util.*;
+
+public class PolygonTriangulate{
+  public static void main(String []args){
+    Scanner sc=new Scanner(System.in);
+    int stuCount=sc.nextInt();
+    int k=0;
+    sideCount=0;
+    for(int side=3;;side++){
+    k=PolygonTrangulateApi.noTriang(side);
+    if(k>=stuCount){
+    sideCount=k;
+    break;
+    }
+    }
+    System.out.println(SideCount);
+    
+    
+  }
+}
