@@ -3,11 +3,11 @@ b=[]
 for i in range(3):
     c=[x for x in input().split()]
     b.append(c)
-print(b)
+#print(b)
 out=""
 i=0
 while(i<a):
-    print(i)
+    #print(i)
     if(b[0][i]=='#'):
         out=out+'#'
         i=i+1
