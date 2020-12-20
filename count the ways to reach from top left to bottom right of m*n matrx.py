@@ -15,7 +15,7 @@ def newgetpath(n,m):
 
 #using DP it will be better compared to recursion
 def dpgetpath(r,c):
-    out=[[0 for x in range(r)]for y in range(c)]
+    out=[[0 for x in range(c)]for y in range(r)]
     for i in range(c):
         out[0][i]=1
     for j in range(r):
