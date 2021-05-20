@@ -5,7 +5,13 @@ public class Main{
     public static String getprefix(ArrayList<String> a){
         String s="";
         int i=0;
-        while(true){
+        int minl=10000000;
+        for(String si:a){
+            if(si.length()<minl){
+                minl=si.length();
+            }
+        }
+        while(i<minl){
             if((a.get(0).charAt(i)==a.get(1).charAt(i)) &&(a.get(0).charAt(i)==a.get(2).charAt(i))){
                 s=s+(a.get(0).charAt(i));
                 i++;
